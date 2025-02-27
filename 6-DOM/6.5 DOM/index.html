@@ -1,0 +1,17 @@
+<div class="container">
+    <p class="hidden" style="display: none;">Texto oculto</p>
+    <p class="replace">Reemplázame</p>
+</div>
+<script>
+    // Cambiar texto de párrafo oculto
+    const hiddenElement = document.querySelector(".hidden");
+    hiddenElement.textContent = "Texto revelado";
+
+    // Mostrar solo el contenido visible del contenedor
+    const container = document.querySelector(".container");
+    console.log(container.innerText);
+
+    // Reemplazar la etiqueta completa con un mensaje personalizado
+    const replaceElement = document.querySelector(".replace");
+    replaceElement.outerText = "Etiqueta reemplazada";
+</script>
