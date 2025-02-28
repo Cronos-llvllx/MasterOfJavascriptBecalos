@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Generador de Contraseñas</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="password-generator-container">
+    <h1>Generador de Contraseñas</h1>
+    <!-- Campo para mostrar la contraseña generada -->
+    <input type="text" class="generated-password" id="passwordOutput" readonly />
+    <!-- Slider para la longitud de la contraseña -->
+<div class="slider-container">
+    <label for="lengthRange">Longitud:</label>
+    <input type="range" id="lengthRange" min="8" max="20" value="10" />
+    <span id="rangeValue">10</span>
+</div>
+
+<!-- Checkboxes para opciones -->
+<div class="checkbox-group">
+    <label>
+    <input type="checkbox" id="includeUppercase" checked />
+    Incluir mayúsculas (A-Z)
+    </label>
+    <label>
+    <input type="checkbox" id="includeLowercase" checked />
+    Incluir minúsculas (a-z)
+    </label>
+    <label>
+        <input type="checkbox" id="includeNumbers" checked />
+        Incluir números (0-9)
+    </label>
+    <label>
+        <input type="checkbox" id="includeSymbols" checked />
+        Incluir símbolos (!@#$%)
+    </label>
+    </div>
+    <!-- Indicador de fuerza (simple) -->
+    <div class="strength-indicator">
+    <span>Fuerza:</span>
+    <div class="strength-bar" id="bar1"></div>
+    <div class="strength-bar" id="bar2"></div>
+    <div class="strength-bar" id="bar3"></div>
+    </div>
+
+    <!-- Botón para generar contraseña -->
+    <button class="generate-btn" id="generateBtn">GENERAR</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
