@@ -1,0 +1,119 @@
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f; /* Gris oscuro */
+    color: #fff;
+}
+    /* ======= Header ======= */
+header {
+    background-color: #2e2e2e; /* Un tono de gris oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.brand {
+    font-size: 1.5rem;
+    color: #ffa500; /* Naranja */
+    font-weight: bold;
+}
+nav a {
+    color: #ffa500; /* Naranja */
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffc04d; /* Naranja más claro */
+}
+
+    /* ======= Contenedor Principal ======= */
+.main-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    color: #ffa500; /* Naranja */
+    margin-bottom: 20px;
+}
+    /* ======= Formulario de Comentarios ======= */
+.comment-form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #333; /* Gris más oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    resize: vertical; /* Permite ajustar el tamaño vertical */
+    } 
+    #nameInput {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 50px;
+        }
+.comment-form button {
+    background-color: #ffa500; /* Naranja */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #1f1f1f; /* Gris oscuro */
+    font-weight: bold;
+    margin-top: 10px;
+    }
+.comment-form button:hover {
+    background-color: #ffc04d; /* Naranja más claro */
+    }
+
+    /* ======= Contenedor de Comentarios ======= */
+.comments-container {
+    margin-top: 20px;
+    }
+.comment {
+    background-color: #2e2e2e; /* Gris oscuro */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    }
+.comment p {
+    margin: 0 0 5px 0;
+    }
+.comment small {
+    color: #ccc;
+    }
+.delete-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    }
+.delete-btn:hover {
+    background-color: #ff6666;
+    }
+
+    /* ======= Footer ======= */
+footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    }

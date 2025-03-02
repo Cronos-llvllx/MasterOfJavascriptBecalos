@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinalProject</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Seguimiento de Libros</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <script src="app.js"></script>
+  <header>
+    <div class="brand">BooksDevf</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Libros</a>
+      <a href="#">Comentarios</a>
+    </nav>
+  </header>
+  <!-- ======= Contenedor Principal ======= -->
+  <div class="main-container">
+    <h1>Seguimiento de Libros</h1>
+    <p>
+      Comparte tus comentarios sobre los libros que estás leyendo o has leído.
+      Agrega tu opinión y ve la fecha y hora en que lo publicaste.
+    </p>
+    <!-- ======= Formulario de Comentarios ======= -->
+    <div class="comment-form">
+      <textarea id="nameInput" placeholder="Escribe tu nombre" required></textarea>
+      <textarea id="commentInput" placeholder="Escribe tu comentario..." required></textarea>
+      <br>
+      <button id="addCommentBtn">Agregar Comentario</button>
+    </div>
+    <!-- ======= Contenedor de Comentarios ======= -->
+    <div class="comments-container" id="commentsContainer"></div>
+  </div>
+  <!-- ======= Footer ======= -->
+  <footer>
+    <p>&copy; 2025 BooksDevf. Todos los derechos reservados.</p>
+  </footer>
+
+<script src="app.js"></script>
 </body>
 </html>
